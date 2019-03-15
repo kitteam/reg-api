@@ -1,0 +1,43 @@
+{
+    "name": "balkonhost/reg-api",
+    "description": "REG.RU client for Laravel",
+    "keywords": [
+        "framework",
+        "laravel",
+        "reg.ru",
+        "api"
+    ],
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "laravel/framework": "^5.0"
+    },
+    "license": "GPL-3.0",
+    "support": {
+        "issues": "https://github.com/balkonhost/reg-api/issues",
+        "source": "https://github.com/balkonhost/reg-api"
+    },
+    "authors": [
+        {
+            "name": "Anton Popov",
+            "email": "a.popov@kit.team"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RegApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RegApi\\Providers\\RegServiceProvider"
+            ],
+            "aliases": {
+                "Reg": "RegApi\\Facades\\Reg"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
