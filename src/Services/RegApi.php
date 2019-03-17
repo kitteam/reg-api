@@ -64,7 +64,7 @@ class RegApi
      *
      * @return string
      */
-    public function send($cmd = 'nop', $params = [])
+    public function send($cmd = 'nop', $params = [], $format = 'plain')
     {
         $config = config('reg.client');
 
@@ -78,6 +78,13 @@ class RegApi
             'username' => $this->username,
             'password' => $this->password
         ]);
+
+        if ('json' === $format) {
+            $params = [
+                'input_data' => json_encode($params),
+                'input_format' => 'json'
+            ];
+        }
 
         $json = $client->post($cmd, ['form_params' => $params])
             ->getBody()
