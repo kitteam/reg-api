@@ -1,5 +1,5 @@
 {
-    "name": "balkonhost/reg-api",
+    "name": "kit-team/reg-api",
     "description": "REG.RU client for Laravel",
     "keywords": [
         "framework",
@@ -14,8 +14,8 @@
     },
     "license": "GPL-3.0",
     "support": {
-        "issues": "https://github.com/balkonhost/reg-api/issues",
-        "source": "https://github.com/balkonhost/reg-api"
+        "issues": "https://github.com/kitteam/reg-api/issues",
+        "source": "https://github.com/kitteam/reg-api"
     },
     "authors": [
         {
