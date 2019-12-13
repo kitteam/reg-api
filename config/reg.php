@@ -20,7 +20,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'default' => 'test',
+    'default' => 'default',
 
     /*
     |--------------------------------------------------------------------------
@@ -29,9 +29,9 @@ return [
     */
 
     'accounts' => [
-        'test' => [
-            'username' => 'username',
-            'password' => 'secret',
+        'default' => [
+            'username' => env('REG_USERNAME', 'username'),
+            'password' => env('REG_PASSWORD', 'secret'),
         ],
     ],
 
